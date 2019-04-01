@@ -1,0 +1,15 @@
+h1 Result
+
+if isRight
+    h1 맞았습니다
+    h3 맞은 개수 #{solve}
+
+else
+    h1 틀렸습니다
+    h3 맞은 개수 #{solve}
+
+if id <= 4
+    a(href=`/problem/${id}/?solve=${solve}`) 다음 문제
+
+else
+    h1 끝

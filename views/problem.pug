@@ -1,0 +1,6 @@
+h1= db
+form(methord="get" action=`/problem/${id}/result/`)
+    input(type="text", placeholder="정답", name="answer")
+    input(type="hidden", value=`${solve}` name="solve")
+    input(type="hidden", value=`${id + 1}`, name="id" )
+    input(type="submit", value="제출")
